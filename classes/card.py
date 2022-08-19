@@ -34,7 +34,8 @@ class Card:
             self.SUIT = argv[1]
             self.DECK = argv[2]
             self.ID = self.NUMBER + self.SUIT.value * 13 + self.DECK * 52
-
+    def __str__(self):
+        return (self.SUIT,self.NUMBER)
 
 
 

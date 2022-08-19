@@ -1,7 +1,6 @@
-from classes import card
+from classes import Deck
 
 
 if __name__ == '__main__':
-    a=card.Card(4, card.Suits.SPADE, 0).ID
-    print(a)
-    print(card.Card(a).NUMBER)
+    deck = Deck.Deck()
+    print(len(deck.cards))
